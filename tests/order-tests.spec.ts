@@ -112,7 +112,6 @@ test.describe('ORDERS', async () => {
         await expect.soft(await orderFoundPage.displayedOrderName.textContent()).toBe("TestName")
         await expect.soft(await orderFoundPage.displayedOrderPhone.textContent()).toBe("+37124806687")
         await expect.soft(await orderFoundPage.displayedOrderComment.textContent()).toBe("TestComment")
-
     });
     test('Get 500 error with mock api', async ({page}) => {
 
